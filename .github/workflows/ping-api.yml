@@ -1,0 +1,16 @@
+name: Ping Violations API
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # every 5 minutes (GitHub Actions minimum is typically 5 minutes)
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl external violations endpoint
+        run: |
+          set -e
+          echo "Pinging external violations endpoint..."
+          curl -fsS -o /dev/null "https://nextgen-fv1h.onrender.com/api/violations" && echo "OK" || echo "Request failed"
