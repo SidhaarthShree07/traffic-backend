@@ -14,3 +14,4 @@ jobs:
           set -e
           echo "Pinging external violations endpoint..."
           curl -fsS -o /dev/null "https://nextgen-fv1h.onrender.com/api/violations" && echo "OK" || echo "Request failed"
+          curl -fsS -o /dev/null "https://saksham-portfolio-deployment-latest.onrender.com" && echo "OK" || echo "Request failed"
