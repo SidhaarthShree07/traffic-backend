@@ -16,3 +16,4 @@ jobs:
           curl -fsS -o /dev/null "https://nextgen-fv1h.onrender.com/api/violations" && echo "OK" || echo "Request failed"
           curl -fsS -o /dev/null "https://saksham-portfolio-deployment-latest.onrender.com" && echo "OK" || echo "Request failed"
           curl -fsS -o /dev/null "https://safetransit.onrender.com/" && echo "OK" || echo "Request failed"
+          curl -fsS -o /dev/null "https://tds-p1-nwae7o721-sidhaarth-shrees-projects.vercel.app/health" && echo "OK" || echo "Request failed"
